@@ -1,0 +1,119 @@
+<div class="jumbotron">
+  <div class="homeButton">
+	<a id="backToMain" href="#/intro">Back to Main</a>
+  </div>
+  <h1 class="request">Request a Tuning</h1>
+  <div class="intro">
+	  <p>This site is designed to help you, the <em>Piano Owner</em>, get lined up with the right <em>Piano Technician</em></p>
+	  <p>...and to help you know what to expect when they arrive.</p>
+  </div>
+</div>
+
+
+<div class="claimHeader">
+	<p>
+		Filling out this form will generate an email request to our registered technicians who have indicated that they are interested in, and capable of, doing the work that you are requesting.
+	</p>
+	<p>
+		Once the form is filled out you can then expect a qualified technician to contact you within 24 business hours.
+	</p>
+</div>
+
+
+<!-- CUSTOMER CONTACT INFO -->
+
+<div class="contactInfo">
+	<h1>Your Info</h1>
+	<fieldset>
+		<label>First Name:<input ng-model="newLead.firstName" type="text" placeholder="First Name" required></label>
+		<label>Last Name:<input ng-model="newLead.lastName" type="text" placeholder="Last Name" required></label><br>
+		<label>Street Address:<input ng-model="newLead.address" type="text" placeholder="Street Address" required></label>
+		<label>City:<input ng-model="newLead.city" type="text" placeholder="City" required></label>
+		<label>County:<input ng-model="newLead.county" type="text" placeholder="County" required></label>
+		<label>State:<input ng-model="newLead.state" type="text" placeholder="State" required></label>
+		<label>Zip:<input ng-model="newLead.zip" type="number" placeholder="Zip Code" required></label><br>
+		<label>Phone:</label><input ng-model="newLead.phone" type="number" placeholder="Telephone" required></label>
+		<label>Email:<input ng-model="newLead.email" type="email" placeholder="Email" required></label>
+	</fieldset>
+</div>
+
+
+<!-- PIANO INFO -->
+
+<div class="pianoInfo">
+	<h1>Piano's Info</h1>
+	<form>
+		<div id="pianoDetail" class="pianoKind">
+			<span>Based off the images below, what kind of Piano is it?</span>
+			<input ng-model="newLead.pianoKind" type="text" placeholder="Piano Kind">
+	<!-- 		<div class="typeImages">
+					grand piano
+					Console Piano
+					Spinet / Drop Action
+					Old Upright
+				</div> -->
+		</div>
+			
+		<div id="pianoDetail" class="pianoBrand">	
+			<span>What brand of Piano is it?</span>
+			<input ng-model="newLead.pianoBrand" type="text" placeholder="Piano's Brand">
+		</div>
+
+		<div id="pianoDetail" class="pianoAge">		
+			<span>How old is your piano?</span>
+			<input ng-model="newLead.pianoAge" type="text" placeholder="Piano's Age">
+		</div>
+			
+		<div id="pianoDetail" class="pianoAgeGuess">	
+			<p>If you are not sure of it's age, please guess by selecting one of the boxes below.</p>
+				<input ng-model="newLead.pianoAgeGuess0015" type="checkbox" value="ageGuessCheckbox1"> 0-15 yrs 
+				<input ng-model="newLead.pianoAgeGuess1530" type="checkbox" value="ageGuessCheckbox2"> 15-30 yrs 
+				<input ng-model="newLead.pianoAgeGuess3050" type="checkbox" value="ageGuessCheckbox3"> 30-50 yrs 
+				<input ng-model="newLead.pianoAgeGuess5075" type="checkbox" value="ageGuessCheckbox4"> 50-75 yrs 
+				<input ng-model="newLead.pianoAgeGuess7500" type="checkbox" value="ageGuessCheckbox4"> 75+ yrs
+		</div>
+
+		<div id="pianoDetail" class="lastTuned">
+			<p>How long has it been since your piano was last tuned?</p>
+				<input ng-model="newLead.lastTuned0001" type="checkbox" value="lastTunedCheckbox1"> 0-1 yrs 
+				<input ng-model="newLead.lastTuned0102" type="checkbox" value="lastTunedCheckbox2"> 1-2 yrs 
+				<input ng-model="newLead.lastTuned0305" type="checkbox" value="lastTunedCheckbox3"> 3-5 yrs 
+				<input ng-model="newLead.lastTuned0510" type="checkbox" value="lastTunedCheckbox4"> 5-10 yrs
+				<input ng-model="newLead.lastTuned0010" type="checkbox" value="lastTunedCheckbox5"> 10+ yrs 
+		</div>
+
+
+		<div id="pianoDetail" class="workNeeded">
+			<span>What kind of work do you want done?</span>
+			<span>*select all that apply*</span></br>
+				<div class="workNeededSelections">
+					<input ng-model="newLead.tuningRequest" type="checkbox" value="tuningCheckbox"> Tuning <br>
+						<p>A tuning is the most basic service technicians perform on a piano.  Usually this service can include minor repairs and adjustments to the piano that improve it's playability/stability.</p>
+					<input ng-model="newLead.pitchRaiseRequest" type="checkbox" value="pitchRaiseCheckbox"> Pitch Raise <br>
+						<p>If a piano has not been serviced for 2+ years it will most likely need a pitch raise before it can be properly tuned.</p>
+					<input ng-model="newLead.repairRequest" type="checkbox" value="repairsCheckbox"> Repairs <br>
+						<p>Potential repairs that a piano may need vary greatly.  You may have "sticking keys", "keys that make a weird sound", or a pedal that doesn't work they way it should.  Indicate in the comment field below any specific concerns.</p>
+					<input ng-model="newLead.cleaningRequest" type="checkbox" value="cleaningCheckbox"> Internal Cleaning <br>
+						<p>Remove years of dust, spider webs, and foreign objects in a way that is gentle and safe for the piano.</p>
+					<input ng-model="newLead.regulationRequest" type="checkbox" value="regulationCheckbox"> Regulation <br>
+						<p>An extensive overhaul of your piano's action that completely evens out each key's weight, feel, depression depth, volume, and performance.</p>
+					<input ng-model="newLead.purchaseConsult" type="checkbox" value="purchaseConsultCheckbox"> Purchase Consult <br>
+						<p>You wouldn't buy a car without having it checked by a mechanic you trust.  Do the same with a piano.  Piano technicians can help you know what to look for, what to avoid, and advise you on fair prices for your area.</p>
+					<input ng-model="newLead.estimateRequest" type="checkbox" value="estimiateCheckbox"> Estimate <br>
+						<p>Anticipating a large repair that you need to know how to budget for? Estimates can help you know what to expect.</p>
+					<input ng-model="newLead.appraisalRequest" type="checkbox" value="appraisalCheckbox"> Appraisal <br>
+						<p>Find out your piano's current value and have it documented.</p>
+					<input ng-model="newLead.otherRequest" type="checkbox" value="otherCheckbox"> Other - Please indicate below.<br>
+					<div class="requestComment">Comment:<br>
+				  		<input ng-model="newLead.comment" name='commentField' rows="10" cols="75">Describe repairs or other work needed here.
+				  	</div>	
+ 
+				</div>
+			</div>
+		</div>
+
+		<div class="submitButton">
+			<input ng-click="createLead()" type="submit" value="submit" placeholder="Submit Request">
+		</div>
+	</form>
+</div>

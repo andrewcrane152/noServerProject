@@ -1,0 +1,57 @@
+<div class="jumbotron">
+
+  <div class="homeButton">
+	<a id="backToMain" href="#/intro">Back to Main</a>
+  </div>
+
+  <h1 class="request">Claim a Tuning</h1>
+  
+  <div class="intro">
+	  <p>Mouse over the tuning requests below to view the details.</p>
+	  <p>"Claim" them to have the contact information sent to you via email.</p>
+  </div>
+
+</div>
+
+<div >
+	<div class="firstLeadList" ng-repeat="lead in leads">
+<!-- 				<a href="#/request/{{lead.$id}}"> -->
+		<div class="firstContactsInfo">
+			<span class="firstContactInfo">Name: <strong>{{ lead.firstName }}</strong></span>
+			<span class="firstContactInfo">City/State: <strong>{{ lead.city }}, {{ lead.state }}</strong></span>
+			<span class="firstContactInfo">Piano Type: <strong>{{ lead.pianoKind }}</strong></span>
+			<span  class="firstContactInfo" ng-show="lead.pianoAge">Piano Age: <strong>{{ lead.pianoAge }}</strong></span>
+
+		<div class="firstServicesRequested">
+			<p><strong>REQUESTED SERVICES</strong></p>
+			<span class="serviceRequested" ng-show="lead.tuningRequest">Tuning</span>
+			<span class="serviceRequested" ng-show="lead.pitchRaiseRequest">Pitch Raise</span>
+			<span class="serviceRequested" ng-show="lead.repairRequest">Repairs</span>
+			<span class="serviceRequested" ng-show="lead.cleaningRequest">Cleaning</span>
+			<span class="serviceRequested" ng-show="lead.regulationRequest">Regulation</span>
+			<span class="serviceRequested" ng-show="lead.purchaseConsult">Purchase Consult</span>
+			<span class="serviceRequested" ng-show="lead.estimateRequest">Estimate</span>
+			<span class="serviceRequested" ng-show="lead.appraisalRequest">Appraisal</span>
+		</div>
+
+	</div>	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map> -->
