@@ -1,39 +1,143 @@
 html body {
-	color: #bbbbbb;
 	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 	/*background-image: url("images/urbanskyline.jpg");*/
 	background-color: #112222;
 }
 
-#mainHeader {
-	color: #111111;
+
+input {
+	color: black;
+}
+
+input[type=submit] {
+	font-size: 1.25em;
+	height: 1.5em;
+	width: 10em;
+	border-radius: 5px;
+	font: bold;
+}
+
+input[name=commentField] {
+	text-align: center;
+	color: black;
+	width: 75%;
+	height: 3em;
+}
+
+input[type=checkbox] {
+	margin-left: 8px;
+}
+
+input[name=brand] {
+	width: 20em;
+	text-align: center;
+}
+
+li {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .jumbotron {
 	background-image: url("images/background.gif");
 	background-size: inherit;
 	text-align: center;
+	font-size: 1.5em;
+	height: 300px;
+	width: 100%;
+	margin: 0px;
+	font-family: 'Bad Script', cursive;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.infoParentA {
+	border-color: black;
+	border-radius: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 80%;
+}
+
+.infoParentB {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	width: 50%;
+	text-align: left;
+}
+
+.body {
+	color: #dddddd;
+}
+
+.headerh1 {
+	padding-top: 15px;
+}
+
+#homeButton {
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	color: black;
+	font-size: 1em;	
+}
+
+.website {
+	font-family: 'Bad Script', cursive;
+}
+
+.infoHeader{
+	font-family: 'Bad Script', cursive;
+	text-decoration: underline; 
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+
+.claimHeader {
+	font-size: 1.2em;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
 .firstLeadList {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	margin-left: 10%;
 	margin-right: 10%;
-	width: 80%;
 	padding: 10px;
-	border: 1px solid black;
+	border: 3px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#pianoDetail{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 10px;
+	border: 3px solid black;
 	border-radius: 10px;
 	text-align: center;
 }
 
 .firstServicesRequested {
-	background-color: #eeeeee;
+	background-color: #cccccc;
 	border-radius: 10px;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 10px;
 	padding: 5px;
+	color: #222222;
 }
 
 .serviceRequested {
@@ -47,6 +151,11 @@ html body {
 	font-size: 1.2em;
 }
 
+.contactInfo{
+	text-align: center;
+	font-size: 1.2em;
+}
+
 .pianoInfo{
 	text-align: center;
 }
@@ -55,7 +164,7 @@ html body {
 	margin: 10px;
 }
 
-#backToMain{
+.backToMain{
 	float: right;
 }
 
@@ -64,12 +173,49 @@ html body {
 }
 
 .interestingFacts{
-	margin-left: 10%
+	margin-left: 10%;
 	margin-right: 10%;
 }
 
+.intro{
+	font: bold; 
+}
 
+.homeButton{
+	float: right;
+}
 
+.requestRouter{
+	text-align: center;
+	margin: 15px;
+	font-style: italic;
+	font-size: 2em;
+	font-family: 'Bad Script', cursive;
+}
 
+.claimRouter{
+	text-align: center;
+	margin: 15px;
+	font-style: italic;
+	font-size: 2em;
+	font-family: 'Bad Script', cursive;
+}
 
+.serviceDescriptions {
+	text-align: left;
+	margin: 10px;
+	border: 1px black solid;
+	border-radius: 10px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+
+.workNeededSelections {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.inputButton {
+	margin: 15px;
+}
 /*.angular-google-map-container { height: 400px; }*/
