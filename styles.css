@@ -22,6 +22,7 @@ input[name=commentField] {
 	color: black;
 	width: 75%;
 	height: 3em;
+	margin-bottom: 18px;
 }
 
 input[type=checkbox] {
@@ -33,6 +34,10 @@ input[name=brand] {
 	text-align: center;
 }
 
+input[name=contactInput] {
+	width: 15em;
+}
+
 li {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -40,7 +45,7 @@ li {
 
 .jumbotron {
 	background-image: url("images/background.gif");
-	background-size: inherit;
+	background-size: cover;
 	text-align: center;
 	font-size: 1.5em;
 	height: 300px;
@@ -63,15 +68,34 @@ li {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 80%;
+	width: 100%
 }
 
-.infoParentB {
+.infoParentBFirst {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 50%;
+	text-align: left;
+	padding-right: 8px;
+}
+
+.infoParentBSecond {
+	display: flex;
+	flex-direction: row;
 	justify-content: left;
 	width: 50%;
 	text-align: left;
+	padding-left: 8px;
+}
+
+.infoParentB .first {
+	float: right;
+}
+
+.infoInputLabels {
+	display: flex:
+	flex-direction; column;
 }
 
 .body {
@@ -86,9 +110,13 @@ li {
 	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 	position: absolute;
 	top: 30px;
-	right: 20px;
+	right: 3fl0px;
 	color: black;
 	font-size: 1em;	
+}
+
+#backToMain {
+	color: black;
 }
 
 .website {
@@ -149,6 +177,8 @@ li {
 	margin-left: 10px;
 	margin-right: 10px;
 	font-size: 1.2em;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .contactInfo{

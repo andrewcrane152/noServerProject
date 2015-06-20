@@ -22,38 +22,37 @@
 	</div>
 
 	<div class="form">
-		<!-- CUSTOMER CONTACT INFO -->
-
 		<div class="contactInfo">
 			<h1 class="infoHeader">Your Info</h1>
 			<div class="infoParentA">
-				<div class="infoParentB first">
-					<div class="infoInput">
-						<label>First Name:<input ng-model="newLead.firstName" type="text" placeholder="First Name" required></label>
+				<div class="infoParentBFirst">
+					<div class="infoInputLabels">
+						<div>First Name:</div>
+						<div>Address:</div>
+						<div>State:</div>
+						<div>Phone:</div>
 					</div>
-					<div class="infoInput">
-						<label>Address:<input ng-model="newLead.address" type="text" placeholder="Street Address" required></label>
-					</div>
-					<div class="infoInput">
-						<label>State:<input ng-model="newLead.state" type="text" placeholder="State" required></label>
-					</div>	
-					<div class="infoInput">
-						<label>Phone:</label><input ng-model="newLead.phone" type="number" placeholder="Telephone" required></label>
+					<div class="infoInputFields">
+						<div><input name="contactInput" ng-model="newLead.firstName" type="text" placeholder="First Name" required></div>
+						<div><input name="contactInput" ng-model="newLead.address" type="text" placeholder="Street Address" required></div>
+						<div><input name="contactInput" ng-model="newLead.state" type="text" placeholder="State" required></div>
+						<div><input name="contactInput" ng-model="newLead.phone" type="number" placeholder="Telephone" required></div>
 					</div>
 				</div>
 
-				<div class="infoParentB second">
-					<div class="infoInput">
-						<label>Last Name:<input ng-model="newLead.lastName" type="text" placeholder="Last Name" required></label>
+				<div class="infoParentBSecond">
+					<div class="infoInputLabels">
+						<div>Last Name:</div>
+						<div>City:</div>
+						<div>Zip:</div>
+						<div>Email:</div>
 					</div>
-					<div class="infoInput">
-						<label>City:<input ng-model="newLead.city" type="text" placeholder="City" required></label>
-					</div>
-					<div class="infoInput">
-						<label>Zip:<input ng-model="newLead.zip" type="number" placeholder="Zip Code" required></label>
-					</div>
-					<div class="infoInput">
-						<label>Email:<input ng-model="newLead.email" type="email" placeholder="Email" required></label>
+
+					<div class="infoInputFields">
+						<div><input name="contactInput" ng-model="newLead.lastName" type="text" placeholder="Last Name" required></div>
+						<div><input name="contactInput" ng-model="newLead.city" type="text" placeholder="City" required></div>
+						<div><input name="contactInput" ng-model="newLead.zip" type="number" placeholder="Zip Code" required></div>
+						<div><input name="contactInput" ng-model="newLead.email" type="email" placeholder="Email" required></div>
 					</div>
 				</div>
 			<div>
